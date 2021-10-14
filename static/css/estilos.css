@@ -1,0 +1,53 @@
+#logoindex{
+    float: left;
+    width: 250px;
+}
+
+
+body{
+    background-color:#fff;
+}
+
+button{
+   float: right;
+   
+}
+
+
+.boton1 {
+    color: #318aac !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-color: #318aac;
+    transition: all 1s ease;
+    position: relative;
+    border-radius: 5px;
+  }
+.boton1:hover {
+    background: #318aac;
+    color: #fff !important;
+}
+
+.boton2 {
+    color: #318aac !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-color: #318aac;
+    transition: all 1s ease;
+    position: relative;
+    border-radius: 5px;
+  }
+.boton2:hover {
+    background: #318aac;
+    color: #fff !important;
+}
+
+.menu{
+
+}

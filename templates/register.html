@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/miEstilo.css') }}"></link>
+    <meta name="viewport" content="width=device-width, inicial scale=1.0">
+    <title>Sumas</title>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/validacion.js') }}"></script>
+  </head>
+  <body background = "fondopage.gif";>
+    <section class="content">
+      {% for message in get_flashed_messages() %}
+      <div class="flash">{{ message }}</div>
+      {% endfor %}
+    </section>
+    <div class="logoindex">
+        <img src="{{ url_for('static', filename='images/logoindex.png') }}" id="logoxd" href="index.html">
+    </div>
+    <div class="Titulo">
+      <h1>Sign In</h1>
+    </div>
+      <form name="formRegistro" action="/register" method="POST" onsubmit="validarFormulario();">
+        <p>Ingrese nombre</p>
+          <input type="text" name="nombre" placeholder="nombre">
+        <p>Ingrese usuario</p>
+          <input type="text" name="username" placeholder="usuario">
+        <p>Correo</p>
+          <input type="text" name="correo" placeholder="ingrese correo">
+        <p>Ingrese sexo</p>
+          <input type="radio" name="sexo" value="h" >Hombre
+          <input type="radio" name="sexo" value="m" >Mujer
+        <p>Contraseña:</p>
+          <input type="password" id="password" name="password" placeholder="ingrese contraseña">
+          <div class="iman">
+            <img src="{{ url_for('static', filename='images/IMAGEN.png') }}" id="logoeye" onmouseover="mostrarcontrasena();" onmouseout="ocultarcontrasena();">
+          </div>
+        
+        <p>Fecha de nacimiento
+            <input type="date" name="fecha" id="">
+        </p>
+          
+        <p>
+          <input type="checkbox" name="condiciones">
+          acepto los terminos y condiciones
+        </p>
+        <button type="submit" id= "enviar" value="enviar">enviar</button>
+      </form>
+  </body>
+</html>

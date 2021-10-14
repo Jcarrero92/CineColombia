@@ -1,0 +1,100 @@
+:root {
+  --rojo: #e50914;
+  --fondo: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--fondo);
+  font-family: "Open Sans", sans-serif;
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  padding: 30px 0;
+}
+
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logotipo {
+  font-family: "Bebas Neue", cursive;
+  font-weight: normal;
+  color: var(--rojo);
+  font-size: 40px;
+}
+
+.estiloform {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  margin: 50px auto;
+  justify-content: space-around;
+  width: 400px;
+  background-color: #f5f3f4;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.formulario h1 {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.formulario .elemento label {
+  justify-content: start;
+}
+
+.formulario .elemento input {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid;
+  margin-bottom: 30px;
+}
+
+#vercontrasena {
+  width: 30px;
+  position: absolute;
+  display: inline-block;
+  padding: 5px 5px;
+}
+
+.ocultar {
+  display: none;
+}
+
+.mostrar {
+  display: block;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+  header .logotipo {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,41 @@
+body {
+  height: 400px;
+  background-image: url(../static/img/fondo.jpg);
+background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+}
+  form {
+    width: 350px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #ccc;
+  }
+  form input {
+    padding: 3px 10px;
+    border: 2px solid #f6f6f6;
+    border-radius: 3px;
+    margin: 8px 10px;
+    display: inline-block;
+  }
+  button {
+    text-align: center;
+    font-weight: bold;
+  }
+  #vercontrasena {
+    height: 30px;
+    width: 30px;
+    padding: auto;
+    position: absolute;
+    display: inline-block;
+  }
+  
+  #logoxd{
+  width: 500px;
+  margin: auto;
+  display: grid;
+  text-align: right;
+  background-color: rgba(141, 139, 139, 0.027);
+  }
+  

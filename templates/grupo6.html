@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="nombre.js"></script>
+     <link rel="stylesheet" type="text/css" href="Mi_Estilo.css" media="screen" />
+    <title>Editar Usuario</title>
+</head>
+<body background="Cine_Colombia.jpg">
+    
+    <h1>Editar Usuario</h1>
+    <form action="" method="get" name="formRegistro" onsubmit="validarformulario();">
+        <p> 
+            Nombre: 
+            <input type="text" name="Nombre" maxlength="50" /> 
+        </p>
+
+        <p> 
+            Usuario: 
+            <input type="text" name="Username" maxlength="50" />
+        </p>
+
+        <p>
+            Cambiar Email:
+            <input type="text" name="correo" maxlength="100" />
+        </p>
+        
+        <p>
+           Contraseña:
+            <input type="password" id="password" name="password" /> <img src="vercontraseña.png" alt="verContrasena" id="vercontrasena" name="vercontrasena" onmouseover="mostrarpassword();" onmouseout="ocultarpassword();" type="password" > 
+        </p>
+
+        <p>
+            Fecha de Nacimiento:
+            <input type="date" name="fecha" >
+        </p>
+
+        <p>
+            Sexo: 
+            <input type="radio" name="Sexo" value="h" /> Hombre
+            <input type="radio" name="Sexo" value="m" /> Mujer
+        </p>
+
+         <p>
+            Ciudades:
+            <select name="Ciudades">
+            <option>Armenia</option>
+            <option>Barranquilla</option>
+            <option>Bogotá</option>
+            <option>Bucaramanga</option>
+            <option>Cali</option>
+            <option>Cartagena</option>
+            <option>Ibagué</option>
+            <option>Manizalez</option>
+            <option>Medellin</option>
+            <option>Monteria</option>
+            <option>Pereira</option>
+            <option>Popayán</option>
+            <option>Villavicencio</option>
+            </select>
+        </p>
+
+        <p>
+            <button type="submit" value="Guardar Cambios">Guardar Cambios</button>
+        </p>
+
+        <p>
+            <a href="eliminar_usuario.html">Eliminar Usuario</a>
+        </p>
+
+       
+</body>
+</html>
