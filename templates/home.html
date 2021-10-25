@@ -3,14 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/homeestilos.css') }}">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+	<link rel="icon" href="https://www.pngkey.com/png/full/309-3098892_algunos-de-nuestros-clientes-cine-colombia-logo-vector.png">
 	<title>CineColombia</title>
 </head>
 <body>
 	<header>
 		<div class="contenedor">
-			<img src="img/logo_cineco.svg">
+			<img src="{{ url_for('static', filename='images/logo_cineco.svg') }}">
 			<nav>
 				<a href="#" class="activo">Inicio</a>
 				<a href="#">Cartelera</a>
@@ -116,6 +117,6 @@
 	</main>
 	
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	<script src="js/main.js"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>

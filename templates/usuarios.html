@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/miEstilo.css') }}"
+    />
+    <title>Usuarios</title>
+  </head>
+  <body>
+    <table id="tabel" border="1"> 
+      <tbody>
+        <tr> 
+          <td width="2">x</td> 
+          <td width="2">y</td> 
+          <td width="2">z</td> 
+          <td width="2">moleste</td> 
+        </tr> 
+        {% for use in usuarios %}
+        <tr>
+          <td width="2">{% print(use[0]) %}</td> 
+          <td width="2">{% print(use[1]) %}</td> 
+          <td width="2">{% print(use[2]) %}</td>  
+          <td width="2">{% print(use[3]) %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+  </body>
+</html>

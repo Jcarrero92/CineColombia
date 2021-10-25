@@ -3,46 +3,62 @@
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/miEstilo.css') }}"></link>
     <meta name="viewport" content="width=device-width, inicial scale=1.0">
-    <title>Sumas</title>
+    <title>Registro</title>
     <script type="text/javascript" src="{{ url_for('static', filename='js/validacion.js') }}"></script>
+    <link rel="icon" href="https://www.pngkey.com/png/full/309-3098892_algunos-de-nuestros-clientes-cine-colombia-logo-vector.png">
   </head>
-  <body background = "fondopage.gif";>
-    <section class="content">
-      {% for message in get_flashed_messages() %}
-      <div class="flash">{{ message }}</div>
-      {% endfor %}
-    </section>
-    <div class="logoindex">
-        <img src="{{ url_for('static', filename='images/logoindex.png') }}" id="logoxd" href="index.html">
-    </div>
-    <div class="Titulo">
+  <body>
+    
+
+    <div class="Formulario">
+      <div class="logocontainer">
+        <a href="/">
+          <img src="{{ url_for('static', filename='images/logo_cineco.svg') }}" id="logoxd" href="index.html">
+        </a>
+      </div>
       <h1>Sign In</h1>
-    </div>
-      <form name="formRegistro" action="/register" method="POST" onsubmit="validarFormulario();">
-        <p>Ingrese nombre</p>
-          <input type="text" name="nombre" placeholder="nombre">
-        <p>Ingrese usuario</p>
-          <input type="text" name="username" placeholder="usuario">
-        <p>Correo</p>
-          <input type="text" name="correo" placeholder="ingrese correo">
-        <p>Ingrese sexo</p>
-          <input type="radio" name="sexo" value="h" >Hombre
-          <input type="radio" name="sexo" value="m" >Mujer
-        <p>Contraseña:</p>
-          <input type="password" id="password" name="password" placeholder="ingrese contraseña">
-          <div class="iman">
-            <img src="{{ url_for('static', filename='images/IMAGEN.png') }}" id="logoeye" onmouseover="mostrarcontrasena();" onmouseout="ocultarcontrasena();">
+        <form name="formRegistro" action="/register" method="POST" onsubmit="validarFormulario();">
+          <div class="estilo1">
+            <p> </p>
+            <input type="text" name="nombre" class="gen" placeholder="nombre">
+  
+          <p> </p>
+            <input type="text" name="username" class="gen" placeholder="usuario">
+  
+          <p> </p>
+            <input type="text" name="correo" class="gen" placeholder="ingrese correo">
+  
+          <p></p>
+            <input type="radio" name="sexo" value="h" >Hombre
+            <input type="radio" name="sexo" value="m" >Mujer
+          <p> </p>
           </div>
+       
+        <div class="contpass">  
+            <input type="password" id="password" class="gen" name="password" placeholder="ingrese contraseña">
+            <img src="{{ url_for('static', filename='images/IMAGEN.png') }}" id="logoeye" onmouseover="mostrarcontrasena();" onmouseout="ocultarcontrasena();">
+            
+        </div>
         
-        <p>Fecha de nacimiento
-            <input type="date" name="fecha" id="">
-        </p>
           
+          
+          
+        <p>Fecha de nacimiento </p><input type="date" name="fecha" id="fes">
+        <section class="content">
+          {% for message in get_flashed_messages() %}
+          <div class="flash">{{ message }}</div>
+          {% endfor %}
+        </section>
         <p>
           <input type="checkbox" name="condiciones">
           acepto los terminos y condiciones
         </p>
-        <button type="submit" id= "enviar" value="enviar">enviar</button>
+        <div class="botonxd">
+          <button type="submit" id= "enviar" value="enviar" >Enviar</button>
+        </div>
+        
+        <a href="/login">¿ya tienes una cuenta?</a>
       </form>
+    </div>
   </body>
 </html>

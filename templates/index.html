@@ -3,29 +3,36 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Incion</title>
+    <title>Incio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='css/estilos.css') }}">
     <script src="{{ url_for('static', filename='css/logOp.js') }}"></script>
-    <header>
-        
-    </header>
+    <link rel="icon" href="https://www.pngkey.com/png/full/309-3098892_algunos-de-nuestros-clientes-cine-colombia-logo-vector.png">
 </head>
 <body>
-    <div class="cont">
+    <div class="fondoa">
         <div class="menu">
-            <form action="/login" methods="POST">
-                <button type="submit" class="boton1">Login</button>
-            </form>
-            <form action="/register" methods="POST">
-                <button type="menu" class="boton2">Sign In</button>
-            </form>
             
+            
+            <div class="butt">
+                <img src="{{ url_for('static', filename='images/logo_cineco.svg') }}" id="logoindex"  >    
+                <h1>¿Que haras hoy?</h1>
+                <p>si tienes una cuenta inicia sesión.</p>
+                <div class="botonesposition">
+                    <form action="/login" methods="POST" id="bcont1">
+                        <button type="submit" class="boton1">Ingresar</button>
+                    </form>
+                    <form action="/register" methods="POST" id="bcont2">
+                        <button type="menu" class="boton2">Registrar</button>
+                    </form>    
+                    <form action="/home" methods="POST" id="bcont3">
+                        <button type="menu" class="boton3">Explorar</button>
+                    </form>    
+                </div>
+                
+            </div>
         </div>
-        <div class="logo">
-            <img src="{{ url_for('static', filename='images/logoindex.png') }}" id="logoindex"  >
-        </div>
-        
     </div>
+
 </body>
 </html>
